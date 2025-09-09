@@ -10,6 +10,7 @@
       margin: 0;
       background-color: #f5f5f5;
       color: #333;
+      line-height: 1.6;
     }
     header {
       background-color: #2e4a3b;
@@ -17,33 +18,29 @@
       padding: 2rem 1rem;
       text-align: center;
     }
-    nav {
-      background-color: #3b5d4f;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
     .logo {
       display: block;
       margin: 0 auto 1rem auto;
-      max-width: 300px;
-    }
-    .hero {
-      padding: 2rem;
-      background-color: #e0e0e0;
-      text-align: center;
+      max-width: 280px;
     }
     .section {
       padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
       background-color: white;
-      margin: 1rem;
-      border-radius: 8px;
+    }
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      background-color: #2e4a3b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
     .contact-button {
       display: inline-block;
@@ -55,64 +52,47 @@
       border-radius: 5px;
       font-weight: bold;
     }
-    footer {
-      background-color: #2e4a3b;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
   </style>
 </head>
 <body>
   <header>
     <img src="alpine-logo.png" alt="Alpine Insurance & Notary logo" class="logo" />
     <h1>Alpine Insurance & Notary</h1>
-    <p>Where business meets the backcountry</p>
+    <p>Mobile Insurance, Notary & Compliance Support for the Sierra Region</p>
+    <p><strong>Serving Lake Tahoe–Truckee and Northern Nevada</strong></p>
   </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#credentials">Credentials</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="section">
+    <h2>👋 Welcome</h2>
+    <p>Alpine Insurance & Notary is a mobile-first agency built for contractors, guides, small businesses, and families who live and work in the Sierra. We’re preparing to launch bundled services that make coverage, compliance, and paperwork easier—on site, on schedule, and with respect for your time.</p>
 
-  <div class="hero">
-    <h2>Serving Truckee, Tahoe, Reno & Sierra Communities</h2>
-    <p>Mobile, compliant, and built for your lifestyle. Insurance, notary, and fingerprinting—all under one roof.</p>
-  </div>
-
-  <div class="section" id="services">
-    <h3>What We Do</h3>
+    <h2>🛠️ What’s Coming Soon</h2>
     <ul>
-      <li><strong>Insurance Services:</strong> Personal and business lines, bundled coverage, transparent quotes, and local expertise.</li>
-      <li><strong>Mobile Notary:</strong> On-site, secure, and fast. We come to you for real estate, estate planning, and business documents.</li>
-      <li><strong>Fingerprinting:</strong> FBI/DOJ-compliant LiveScan services for employment, licensing, and background checks.</li>
+      <li>Commercial & Personal Insurance (CA & NV licensed)</li>
+      <li>Mobile Notary & Loan Signing (CA commissioned)</li>
+      <li>Live Scan Fingerprinting (CA active, NV coming soon)</li>
+      <li>Consultative Support for Small Businesses & Contractors</li>
+      <li>Mobile service delivery across the Sierra and Northern Nevada</li>
     </ul>
-  </div>
 
-  <div class="section" id="credentials">
-    <h3>Credentials & Compliance</h3>
+    <h2>📍 Status Update</h2>
+    <p>We’re currently finalizing our licensing, EIN, and office setup. Full services will be available soon. In the meantime, feel free to reach out with questions or to get on our early contact list.</p>
+
+    <h2>📧 Contact</h2>
+    <p><strong>Steven Cooper, MLIS</strong><br>
+    Founder & Owner, Alpine Insurance & Notary</p>
     <ul>
-      <li><strong>California Department of Insurance License:</strong> #0M12345</li>
-      <li><strong>California Notary Commission:</strong> #22456789 (Expires 2027)</li>
-      <li><strong>Nevada Business Registration:</strong> Trucoop, Inc. registered; Alpine Insurance & Notary FBN filing pending</li>
-      <li><strong>LiveScan Status:</strong> FBI/DOJ-compliant hardware selected; mobile setup in progress</li>
-      <li><strong>Entity Structure:</strong> Alpine Insurance & Notary is a DBA under Trucoop, Inc. (C Corporation)</li>
-      <li><strong>Local Licensing:</strong> Truckee and Placer County business licenses pending; publication required for Nevada County FBN</li>
+      <li>CA Insurance License #0E63692</li>
+      <li>NV Non-Resident Insurance License #197689</li>
+      <li>CA Notary Commission #2409133</li>
     </ul>
-  </div>
-
-  <div class="section" id="contact">
-    <h3>Contact</h3>
     <p>Email: <a href="mailto:steve@alpinetahoe.com">steve@alpinetahoe.com</a></p>
     <a href="mailto:steve@alpinetahoe.com" class="contact-button">Contact Us</a>
-    <p>Mobile services available throughout Truckee, Tahoe City, South Lake Tahoe, Reno, and surrounding Sierra communities.</p>
   </div>
 
   <footer>
     <p>&copy; 2025 Alpine Insurance & Notary — Powered by Alpine Tahoe</p>
-    <p>All services are compliance-driven and tailored for contractors, guides, hospitality teams, families, and local operators.</p>
+    <p>Where business meets the backcountry</p>
   </footer>
 </body>
 </html>
