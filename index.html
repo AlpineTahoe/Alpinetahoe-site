@@ -10,8 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --brand: #0c4a6e;        /* Deep Sierra blue */
-      --accent: #2ea3f2;       /* Tahoe blue */
+      --brand: #0c4a6e;
+      --accent: #2ea3f2;
       --dark: #0f172a;
       --muted: #475569;
       --bg: #f8fafc;
@@ -19,27 +19,21 @@
       --border: #e2e8f0;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--dark); background: var(--bg); }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--dark); background: var(--bg); }
     header { background: linear-gradient(180deg, var(--brand), #0b3d57); color: #fff; padding: 28px 16px; }
     .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
-    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
     .brand { display: flex; align-items: center; gap: 12px; }
-    .brand img.logo { height: 40px; width: auto; }
-    .brand h1 { margin: 0; font-size: 1.35rem; letter-spacing: 0.2px; }
+    .brand img.logo { height: 80px; width: auto; } /* Increased logo size */
+    .brand h1 { margin: 0; font-size: 1.6rem; }
     nav a { color: #dbeafe; text-decoration: none; margin-left: 14px; font-weight: 600; }
     nav a:hover { text-decoration: underline; }
     .hero { padding: 26px 0 12px; }
     .hero h2 { margin: 0 0 8px 0; font-size: 1.6rem; }
     .hero p { margin: 0 0 16px 0; color: #e2e8f0; }
-    .cta { display: flex; flex-wrap: wrap; gap: 10px; }
-    .btn {
-      display: inline-block; padding: 10px 14px; border-radius: 8px; text-decoration: none; font-weight: 700; border: 1px solid transparent;
-    }
-    .btn.primary { background: var(--accent); color: #062130; }
-    .btn.secondary { background: transparent; color: #fff; border-color: #94a3b8; }
     main { padding: 26px 0 40px; }
     .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-    @media (min-width: 880px) { .grid.two { grid-template-columns: 1fr 1fr; } .grid.three { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 880px) { .grid.two { grid-template-columns: 1fr 1fr; } }
     .card {
       background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px;
       box-shadow: 0 2px 10px rgba(2,12,27,0.04);
@@ -48,9 +42,8 @@
     .card p { margin: 0 0 10px; color: var(--muted); }
     ul.clean { margin: 0; padding-left: 18px; color: var(--muted); }
     ul.clean li { margin: 6px 0; }
-    .section-title { margin: 10px 0 8px; font-size: 1rem; color: var(--brand); letter-spacing: 0.2px; }
-    .cred { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-    .cred img { height: 40px; width: auto; vertical-align: middle; }
+    .section-title { margin: 10px 0 8px; font-size: 1rem; color: var(--brand); }
+    .cred { display: flex; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
     .divider { height: 1px; background: var(--border); margin: 16px 0; }
     footer { background: #0b1f2e; color: #cbd5e1; padding: 22px 16px; }
     footer a { color: #93c5fd; text-decoration: none; }
@@ -64,7 +57,6 @@
     <div class="wrap">
       <div class="topbar">
         <div class="brand">
-          <!-- Replace alpine-logo.png with your current logo filename -->
           <img class="logo" src="alpine-logo.png" alt="Alpine Business Services logo">
           <h1>Alpine Business Services</h1>
         </div>
@@ -78,12 +70,7 @@
 
       <div class="hero">
         <h2>Mobile Notary, Insurance & Compliance for the Sierra region</h2>
-        <p>Serving Truckee • Tahoe • Reno with locally rooted expertise and fast, reliable service.</p>
-        <div class="cta">
-          <a class="btn primary" href="#personal">Get a personal quote</a>
-          <a class="btn primary" href="#commercial">Get a commercial quote</a>
-          <a class="btn secondary" href="#notary">Book a notary/signing</a>
-        </div>
+        <p>Serving Truckee • Tahoe • Reno with locally rooted expertise and reliable service.</p>
       </div>
     </div>
   </header>
@@ -96,22 +83,21 @@
         <div>
           <div class="section-title">What we help with</div>
           <ul class="clean">
-            <li><strong>Auto:</strong> Primary, secondary, and seasonal vehicles</li>
-            <li><strong>Home:</strong> Homeowners, condo, vacation, short‑term rental</li>
-            <li><strong>Renters:</strong> Personal property & liability</li>
-            <li><strong>Life:</strong> Term and permanent options</li>
+            <li>Auto: Primary, secondary, and seasonal vehicles</li>
+            <li>Home: Homeowners, condo, vacation, short‑term rental</li>
+            <li>Renters: Personal property & liability</li>
+            <li>Life: Term and permanent options</li>
           </ul>
         </div>
         <div>
           <div class="section-title">Why Alpine</div>
           <ul class="clean">
-            <li><strong>Local context:</strong> Fire zones, snow loads, lake proximity</li>
-            <li><strong>Carrier access:</strong> Multiple markets for tough risks</li>
-            <li><strong>Guided process:</strong> Simple intake, clear next steps</li>
+            <li>Local context: Fire zones, snow loads, lake proximity</li>
+            <li>Carrier access: Multiple markets for tough risks</li>
+            <li>Guided process: Simple intake, clear next steps</li>
           </ul>
         </div>
       </div>
-      <p style="margin-top:12px;"><a class="btn primary" href="mailto:steve@alpinetahoe.com?subject=Personal%20Quote%20Request">Request personal quote</a></p>
     </section>
 
     <section id="commercial" class="card">
@@ -121,24 +107,23 @@
         <div>
           <div class="section-title">Core coverages</div>
           <ul class="clean">
-            <li><strong>General Liability</strong></li>
-            <li><strong>Workers’ Compensation</strong></li>
-            <li><strong>Commercial Auto</strong></li>
-            <li><strong>Professional/Errors & Omissions</strong></li>
-            <li><strong>Cyber & Management Liability</strong></li>
+            <li>General Liability</li>
+            <li>Workers’ Compensation</li>
+            <li>Commercial Auto</li>
+            <li>Professional/Errors & Omissions</li>
+            <li>Cyber & Management Liability</li>
           </ul>
         </div>
         <div>
           <div class="section-title">Industry focus</div>
           <ul class="clean">
-            <li><strong>Contractors:</strong> GC, subs, trades</li>
-            <li><strong>Hospitality:</strong> Lodging, F&B, rentals</li>
-            <li><strong>Retail & Offices</strong></li>
-            <li><strong>Startups & Professional Services</strong></li>
+            <li>Contractors: GC, subs, trades</li>
+            <li>Hospitality: Lodging, F&B, rentals</li>
+            <li>Retail & Offices</li>
+            <li>Startups & Professional Services</li>
           </ul>
         </div>
       </div>
-      <p style="margin-top:12px;"><a class="btn primary" href="mailto:steve@alpinetahoe.com?subject=Commercial%20Quote%20Request">Request commercial quote</a></p>
     </section>
 
     <section id="notary" class="card">
@@ -148,90 +133,33 @@
         <div>
           <div class="section-title">Services</div>
           <ul class="clean">
-            <li><strong>General notarizations</strong></li>
-            <li><strong>Loan signing packages</strong></li>
-            <li><strong>Estate & trust documents</strong></li>
-            <li><strong>Contractor & permitting docs</strong></li>
+            <li>General notarizations</li>
+            <li>Loan signing packages</li>
+            <li>Estate & trust documents</li>
+            <li>Contractor & permitting docs</li>
           </ul>
         </div>
         <div>
           <div class="section-title">Coverage area</div>
           <ul class="clean">
-            <li><strong>Truckee</strong> and North Lake Tahoe</li>
-            <li><strong>South Lake Tahoe</strong> by appointment</li>
-            <li><strong>Reno/Sparks</strong> scheduled windows</li>
+            <li>Truckee and North Lake Tahoe</li>
+            <li>South Lake Tahoe by appointment</li>
+            <li>Reno/Sparks scheduled windows</li>
           </ul>
         </div>
       </div>
-      <p style="margin-top:12px;"><a class="btn secondary" href="mailto:steve@alpinetahoe.com?subject=Book%20a%20Notary%20or%20Loan%20Signing">Book now</a></p>
     </section>
 
     <section id="credentials" class="card">
       <h3>Credentials & compliance</h3>
       <div class="grid two">
         <div>
-         <section id="credentials" class="card">
-  <h3>Credentials & compliance</h3>
-  <div class="grid two">
-    <div>
-      <p><strong>Steven Cooper, MLIS</strong><br>
-         Founder & Owner, Alpine Business Services
-      </p>
-
-      <!-- IRMI MLIS Credly Badge Embed -->
-      <div data-iframe-width="150" data-iframe-height="270"
-           data-share-badge-id="c0fe30ab-0444-47ab-ab4e-2b65b0d42446"
-           data-share-badge-host="https://www.credly.com"></div>
-      <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
-      <ul class="clean">
-        <li><strong>CA Insurance License:</strong> #0E63692</li>
-        <li><strong>NV Non‑Resident Insurance License:</strong> #197689</li>
-        <li><strong>CA Notary Commission:</strong> #2409133</li>
-        <li><strong>Certified Loan Signing Agent:</strong> Certificate on file (CA)</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-          <div class="divider"></div>
-          <ul class="clean">
-            <li><strong>CA Insurance License:</strong> #0E63692</li>
-            <li><strong>NV Non‑Resident Insurance License:</strong> #197689</li>
-            <li><strong>CA Notary Commission:</strong> #2409133</li>
-            <li><strong>Certified Loan Signing Agent:</strong> Certificate on file (CA)</li>
-          </ul>
-        </div>
-        <div>
-          <p class="tiny">
-            Alpine Business Services is a DBA of Trucoop, Inc. We serve California and Nevada with locally informed solutions for individuals and businesses in the Sierra region.
-          </p>
-          <p class="tiny">
-            Email: <a href="mailto:steve@alpinetahoe.com">steve@alpinetahoe.com</a>
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <p>&copy; 2025 Alpine Business Services — A DBA of Trucoop, Inc.</p>
-      <p class="tiny">Where business meets the backcountry.</p>
-      <p class="tiny" style="margin-top:10px;">
-        Alpine Business Services (DBA of Trucoop, Inc.) is licensed to conduct insurance business in California and Nevada. California License #0E63692. Nevada Non‑Resident License #197689. Notary services are commissioned in California under Commission #2409133. This website is intended for informational purposes only and does not constitute a binding offer of coverage or legal advice. For questions about your rights or coverage, contact the California Department of Insurance at
-        <a href="https://www.insurance.ca.gov" target="_blank" rel="noopener">insurance.ca.gov</a>
-        or the Nevada Division of Insurance at
-        <a href="https://doi.nv.gov" target="_blank" rel="noopener">doi.nv.gov</a>.
-      </p>
-      <p class="tiny" style="margin-top:10px;">
-        <strong>Privacy Notice:</strong> Alpine Business Services collects limited personal information through this website, such as email addresses submitted via contact links. We do not sell or share personal data. Information submitted is used solely to respond to inquiries or provide requested services. California residents may request access to or deletion of their personal data under the California Consumer Privacy Act (CCPA). Nevada residents may request that their information not be sold under SB538. To submit a privacy-related request, contact
-        <a href="mailto:steve@alpinetahoe.com">steve@alpinetahoe.com</a>.
-      </p>
-    </div>
-  </footer>
-
-</body>
-</html>
+          <div class="cred">
+            <p style="margin:0;">
+              <strong>Steven Cooper, MLIS</strong><br/>
+              Founder & Owner, Alpine Business Services
+            </p>
+            <!-- IRMI MLIS Credly Badge Embed -->
+            <div data-iframe-width="150" data-iframe-height="270"
+                 data-share-badge-id="c
 
