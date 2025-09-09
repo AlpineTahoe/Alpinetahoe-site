@@ -29,11 +29,14 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .logo {
+      display: block;
+      margin: 0 auto 1rem auto;
+      max-width: 300px;
+    }
     .hero {
       padding: 2rem;
-      background: url('your-hero-image.jpg') center/cover no-repeat;
-      color: white;
-      text-shadow: 1px 1px 3px #000;
+      background-color: #e0e0e0;
       text-align: center;
     }
     .section {
@@ -42,16 +45,22 @@
       margin: 1rem;
       border-radius: 8px;
     }
+    .contact-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #3b5d4f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
     footer {
       background-color: #2e4a3b;
       color: white;
       text-align: center;
       padding: 1rem;
-    }
-    .logo {
-      display: block;
-      margin: 0 auto 1rem auto;
-      max-width: 300px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -59,31 +68,51 @@
   <header>
     <img src="alpine-logo.png" alt="Alpine Insurance & Notary logo" class="logo" />
     <h1>Alpine Insurance & Notary</h1>
-    <p>Local coverage. Trusted signatures. Sierra values.</p>
+    <p>Where business meets the backcountry</p>
   </header>
+
   <nav>
-    <a href="#insurance">Insurance</a>
-    <a href="#notary">Notary</a>
+    <a href="#services">Services</a>
+    <a href="#credentials">Credentials</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <div class="hero">
-    <h2>Serving Truckee, Tahoe, and Sierra Communities</h2>
-    <p>Mobile, compliant, and built for your lifestyle.</p>
+    <h2>Serving Truckee, Tahoe, Reno & Sierra Communities</h2>
+    <p>Mobile, compliant, and built for your lifestyle. Insurance, notary, and fingerprinting—all under one roof.</p>
   </div>
-  <div class="section" id="insurance">
-    <h3>Insurance Services</h3>
-    <p>Personal and business coverage tailored to your needs. Transparent quotes, local expertise, and bundled options available.</p>
+
+  <div class="section" id="services">
+    <h3>What We Do</h3>
+    <ul>
+      <li><strong>Insurance Services:</strong> Personal and business lines, bundled coverage, transparent quotes, and local expertise.</li>
+      <li><strong>Mobile Notary:</strong> On-site, secure, and fast. We come to you for real estate, estate planning, and business documents.</li>
+      <li><strong>Fingerprinting:</strong> FBI/DOJ-compliant LiveScan services for employment, licensing, and background checks.</li>
+    </ul>
   </div>
-  <div class="section" id="notary">
-    <h3>Mobile Notary</h3>
-    <p>On-site, secure, and fast. We come to you—whether you're closing a deal or signing a trust.</p>
+
+  <div class="section" id="credentials">
+    <h3>Credentials & Compliance</h3>
+    <ul>
+      <li><strong>California Department of Insurance License:</strong> #0M12345</li>
+      <li><strong>California Notary Commission:</strong> #22456789 (Expires 2027)</li>
+      <li><strong>Nevada Business Registration:</strong> Trucoop, Inc. registered; Alpine Insurance & Notary FBN filing pending</li>
+      <li><strong>LiveScan Status:</strong> FBI/DOJ-compliant hardware selected; mobile setup in progress</li>
+      <li><strong>Entity Structure:</strong> Alpine Insurance & Notary is a DBA under Trucoop, Inc. (C Corporation)</li>
+      <li><strong>Local Licensing:</strong> Truckee and Placer County business licenses pending; publication required for Nevada County FBN</li>
+    </ul>
   </div>
+
   <div class="section" id="contact">
-    <h3>Get in Touch</h3>
-    <p>Email: steve@alpinetahoe.com<br>Phone: (555) 555-5555</p>
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:steve@alpinetahoe.com">steve@alpinetahoe.com</a></p>
+    <a href="mailto:steve@alpinetahoe.com" class="contact-button">Contact Us</a>
+    <p>Mobile services available throughout Truckee, Tahoe City, South Lake Tahoe, Reno, and surrounding Sierra communities.</p>
   </div>
+
   <footer>
     <p>&copy; 2025 Alpine Insurance & Notary — Powered by Alpine Tahoe</p>
+    <p>All services are compliance-driven and tailored for contractors, guides, hospitality teams, families, and local operators.</p>
   </footer>
 </body>
 </html>
