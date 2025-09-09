@@ -31,11 +31,9 @@
     .hero { padding: 26px 0 12px; }
     .hero h2 { margin: 0 0 8px 0; font-size: 1.6rem; }
     .hero p { margin: 0 0 16px 0; color: #e2e8f0; }
-
     main { padding: 26px 0 40px; }
     .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
     @media (min-width: 880px) { .grid.two { grid-template-columns: 1fr 1fr; } }
-
     .card {
       background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px;
       box-shadow: 0 2px 10px rgba(2,12,27,0.04);
@@ -45,15 +43,8 @@
     ul.clean { margin: 0; padding-left: 18px; color: var(--muted); }
     ul.clean li { margin: 6px 0; }
     .section-title { margin: 10px 0 8px; font-size: 1rem; color: var(--brand); }
-
-    /* Credentials layout */
     .cred-row { display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap; }
     .cred-block { flex: 1; min-width: 280px; }
-    .badge-placeholder {
-      width: 150px; height: 150px; background:#f1f5f9; display:flex; align-items:center; justify-content:center;
-      border:1px solid #cbd5e1; border-radius:8px; color:#64748b; font-size:0.85rem;
-    }
-
     footer { background: #0b1f2e; color: #cbd5e1; padding: 22px 16px; }
     footer a { color: #93c5fd; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
@@ -86,7 +77,6 @@
 
   <main class="wrap">
 
-    <!-- Commercial above Personal -->
     <section id="commercial" class="card">
       <h3>Commercial insurance</h3>
       <p>Protection for contractors, hospitality, retail, and professional services across Truckee–Tahoe–Reno.</p>
@@ -155,7 +145,6 @@
           <ul class="clean">
             <li>Truckee and North Lake Tahoe</li>
             <li>South Lake Tahoe by appointment</li>
-            <li>Reno/Sparks scheduled windows</li>
           </ul>
         </div>
       </div>
@@ -164,7 +153,6 @@
     <section id="credentials" class="card">
       <h3>Credentials & compliance</h3>
       <div class="cred-row">
-        <!-- Left block: Name, licenses, MLIS badge -->
         <div class="cred-block">
           <p style="margin:0;">
             <strong>Steven Cooper, MLIS</strong><br/>
@@ -175,56 +163,7 @@
             <li><strong>NV Non‑Resident Insurance License:</strong> #197689</li>
             <li><strong>CA Notary Commission:</strong> #2409133</li>
           </ul>
+          <div
 
-          <!-- IRMI MLIS Credly Badge Embed -->
-          <div data-iframe-width="150" data-iframe-height="270"
-               data-share-badge-id="c0fe30ab-0444-47ab-ab4e-2b65b0d42446"
-               data-share-badge-host="https://www.credly.com"></div>
-        </div>
 
-        <!-- Right block: Notary badge placeholder -->
-        <div class="cred-block">
-          <p style="margin:0 0 8px 0;"><strong>Certified Loan Signing Agent</strong><br/>California (Certificate on file)</p>
-          <!-- Replace with real badge/embed when ready -->
-          <div class="badge-placeholder">Notary Badge Here</div>
-        </div>
-      </div>
-
-      <p class="tiny" style="margin-top:14px;">
-        Alpine Business Services is a DBA of Trucoop, Inc. We serve California and Nevada with locally informed solutions for individuals and businesses in the Sierra region.
-      </p>
-      <p class="tiny">Email: <a href="mailto:steve@alpinetahoe.com">steve@alpinetahoe.com</a></p>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <p>&copy; 2025 Alpine Business Services — A DBA of Trucoop, Inc.</p>
-      <p class="tiny">Where business meets the backcountry.</p>
-
-      <p class="tiny" style="margin-top:10px;">
-        Alpine Business Services (DBA of Trucoop, Inc.) is licensed to conduct insurance business in California and Nevada.
-        California License #0E63692. Nevada Non‑Resident License #197689. Notary services are commissioned in California
-        under Commission #2409133. This website is intended for informational purposes only and does not constitute a binding
-        offer of coverage or legal advice. For questions about your rights or coverage, contact the California Department of
-        Insurance at <a href="https://www.insurance.ca.gov" target="_blank" rel="noopener">insurance.ca.gov</a> or the
-        Nevada Division of Insurance at <a href="https://doi.nv.gov" target="_blank" rel="noopener">doi.nv.gov</a>.
-      </p>
-
-      <p class="tiny" style="margin-top:10px;">
-        <strong>Privacy Notice:</strong> Alpine Business Services collects limited personal information through this website,
-        such as email addresses submitted via contact links. We do not sell or share personal data. Information submitted is
-        used solely to respond to inquiries or provide requested services. California residents may request access to or
-        deletion of their personal data under the California Consumer Privacy Act (CCPA). Nevada residents may request that
-        their information not be sold under SB538. To submit a privacy-related request, contact
-        <a href="mailto:steve@alpinetahoe.com">steve@alpinetahoe.com</a>.
-      </p>
-    </div>
-  </footer>
-
-  <!-- Credly script (only once, for all badges on the page) -->
-  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-</body>
-</html>
 
