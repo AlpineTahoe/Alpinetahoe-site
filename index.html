@@ -1,234 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alpine Business Services — Truckee • Tahoe • Reno</title>
-  <meta name="description" content="Alpine Business Services — Mobile Notary & Loan Signing, Insurance (Commercial & Personal), and Compliance support across Truckee–Tahoe–Reno.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Upgrade mixed content automatically once HTTPS is live -->
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpine Business Services</title>
   <style>
-    :root {
-      --brand: #0c4a6e;
-      --accent: #2ea3f2;
-      --dark: #0f172a;
-      --muted: #475569;
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --border: #e2e8f0;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--dark); background: var(--bg); }
-    header { background: linear-gradient(180deg, var(--brand), #0b3d57); color: #fff; padding: 28px 16px; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
-    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-    .brand { display: flex; align-items: center; gap: 12px; }
-    .brand img.logo { height: 110px; width: auto; }
-    .brand h1 { margin: 0; font-size: 1.6rem; }
-    nav a { color: #dbeafe; text-decoration: none; margin-left: 14px; font-weight: 600; }
-    nav a:hover { text-decoration: underline; }
-    .hero { padding: 26px 0 12px; }
-    .hero h2 { margin: 0 0 8px 0; font-size: 1.6rem; }
-    .hero p { margin: 0 0 16px 0; color: #e2e8f0; }
-
-    main { padding: 26px 0 40px; }
-    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-    @media (min-width: 880px) { .grid.two { grid-template-columns: 1fr 1fr; } }
-    .card {
-      background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px;
-      box-shadow: 0 2px 10px rgba(2,12,27,0.04);
+    header {
+      background-color: #005A9C;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
-    .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
-    .card p { margin: 0 0 10px; color: var(--muted); }
-    ul.clean { margin: 0; padding-left: 18px; color: var(--muted); }
-    ul.clean li { margin: 6px 0; }
-    .section-title { margin: 10px 0 8px; font-size: 1rem; color: var(--brand); }
-
-    /* Credentials layout */
-    .cred-col { display: flex; flex-direction: column; gap: 12px; }
-    .badge-row { display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start; }
-    .badge-placeholder {
-      width: 150px; height: 150px; background:#f1f5f9; display:flex; align-items:center; justify-content:center;
-      border:1px solid #cbd5e1; border-radius:8px; color:#64748b; font-size:0.85rem;
+    .logo {
+      max-width: 120px;
+      margin-bottom: 10px;
     }
-
-    footer { background: #0b1f2e; color: #cbd5e1; padding: 22px 16px; }
-    footer a { color: #93c5fd; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .tiny { font-size: 0.85rem; }
+    main {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .badge-block {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .badge-block img {
+      width: 160px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+    .badge-block p {
+      margin-top: 10px;
+      font-size: 0.95em;
+    }
+    .signature-block {
+      margin-top: 50px;
+      font-size: 0.9em;
+      line-height: 1.6;
+      color: #444;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
+      color: #666;
+    }
+    a {
+      color: #005A9C;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="wrap">
-      <div class="topbar">
-        <div class="brand">
-          <img class="logo" src="alpine-logo.png" alt="Alpine Business Services logo">
-          <h1>Alpine Business Services</h1>
-        </div>
-        <nav>
-          <a href="#commercial">Commercial insurance</a>
-          <a href="#personal">Personal insurance</a>
-          <a href="#notary">Notary & loan signing</a>
-          <a href="#credentials">Credentials</a>
-        </nav>
-      </div>
-
-      <div class="hero">
-        <h2>Mobile Notary, Insurance & Compliance for the Sierra region</h2>
-        <p>Serving Truckee • Tahoe • Reno with locally rooted expertise and reliable service.</p>
-      </div>
-    </div>
+    <img src="/assets/images/alpine-logo-placeholder.png" alt="Alpine Logo" class="logo">
+    <h1>Alpine Business Services</h1>
+    <p>Mobile Notary • Loan Signing • Fingerprinting • Compliance Solutions</p>
   </header>
 
-  <main class="wrap">
+  <main>
+    <h2>Welcome</h2>
+    <p>Alpine Business Services offers credentialed, mobile support across Truckee, Reno, Tahoe City, and South Lake Tahoe. We specialize in notary services, loan signings, fingerprinting, and compliance-driven workflows tailored to legal, insurance, and business needs.</p>
 
-    <section id="commercial" class="card">
-      <h3>Commercial insurance</h3>
-      <p>Protection for contractors, hospitality, retail, and professional services across Truckee–Tahoe–Reno.</p>
-      <div class="grid two">
-        <div>
-          <div class="section-title">Core coverages</div>
-          <ul class="clean">
-            <li>General Liability</li>
-            <li>Workers’ Compensation</li>
-            <li>Commercial Auto</li>
-            <li>Professional/Errors & Omissions</li>
-            <li>Cyber & Management Liability</li>
-          </ul>
-        </div>
-        <div>
-          <div class="section-title">Industry focus</div>
-          <ul class="clean">
-            <li>Contractors: GC, subs, trades</li>
-            <li>Hospitality: Lodging, F&amp;B, rentals</li>
-            <li>Retail &amp; Offices</li>
-            <li>Startups &amp; Professional Services</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="badge-block">
+      <img src="https://www.nsa.gov/Portals/70/Images/Press-Room/Digital-Media-Center/NSA-Logo.png" alt="Certified Notary Signing Agent Badge">
+      <p><strong>Certified Notary Signing Agent</strong></p>
+      <p>Steve is certified to handle loan documents with precision, compliance, and care.</p>
+      <p><a href="https://www.signingagent.com/profile/your-profile-id" target="_blank">Verify my NSA certification</a></p>
+    </div>
 
-    <section id="personal" class="card">
-      <h3>Personal insurance</h3>
-      <p>Coverage that fits life in the mountains — from lakefront cabins to daily drivers.</p>
-      <div class="grid two">
-        <div>
-          <div class="section-title">What we help with</div>
-          <ul class="clean">
-            <li>Auto: Primary, secondary, and seasonal vehicles</li>
-            <li>Home: Homeowners, condo, vacation, short‑term rental</li>
-            <li>Renters: Personal property &amp; liability</li>
-            <li>Life: Term and permanent options</li>
-          </ul>
-        </div>
-        <div>
-          <div class="section-title">Why Alpine</div>
-          <ul class="clean">
-            <li>Local context: Fire zones, snow loads, lake proximity</li>
-            <li>Carrier access: Multiple markets for tough risks</li>
-            <li>Guided process: Simple intake, clear next steps</li>
-            <li>Familiarity with the California FAIR Plan and the challenges of the state’s evolving homeowners insurance market — helping clients secure coverage when traditional options are limited</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="signature-block">
+      <p><strong>Steve [Last Name]</strong><br>
+      Founder & Operator, Alpine Business Services<br>
+      Commissioned California Notary Public<br>
+      Certified Notary Signing Agent • DOJ-Certified Fingerprint Roller<br>
+      Truckee, CA • Serving the Sierra Region</p>
 
-    <section id="notary" class="card">
-      <h3>Mobile notary &amp; loan signing</h3>
-      <p>On‑site notary and loan signing services — flexible scheduling, clear ID requirements, and smooth closings.</p>
-      <div class="grid two">
-        <div>
-          <div class="section-title">Services</div>
-          <ul class="clean">
-            <li>General notarizations</li>
-            <li>Loan signing packages</li>
-            <li>Estate &amp; trust documents</li>
-            <li>Contractor &amp; permitting docs</li>
-          </ul>
-        </div>
-        <div>
-          <div class="section-title">Coverage area</div>
-          <ul class="clean">
-            <li>Truckee and North Lake Tahoe</li>
-            <li>South Lake Tahoe by appointment</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="credentials" class="card">
-      <h3>Credentials &amp; compliance</h3>
-      <div class="cred-col">
-        <div>
-          <p style="margin:0;">
-            <strong>Steven Cooper, MLIS</strong><br/>
-            Founder &amp; Owner, Alpine Business Services
-          </p>
-          <ul class="clean" style="margin-top:8px;">
-            <li><strong>CA Insurance License:</strong> #0E63692</li>
-            <li><strong>NV Non‑Resident Insurance License:</strong> #197689</li>
-            <li><strong>CA Notary Commission:</strong> #2409133</li>
-          </ul>
-          <p style="margin:8px 0 0 0;">
-            <strong>Email:</strong> <a href="mailto:steve@alpinetahoe.com">steve@alpinetahoe.com</a>
-          </p>
-        </div>
-
-        <div class="badge-row" style="margin-top:6px;">
-          <!-- IRMI MLIS Credly Badge Embed -->
-          <div data-iframe-width="150" data-iframe-height="270"
-               data-share-badge-id="c0fe30ab-0444-47ab-ab4e-2b65b0d42446"
-               data-share-badge-host="https://www.credly.com"></div>
-          
-<div class="badge-block">
-  <img src="/assets/images/nsa-badge.png" alt="Certified Notary Signing Agent Badge" style="width:150px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.2);">
-  <p><strong>Certified Notary Signing Agent</strong></p>
-</div>
-      
-        <p class="tiny" style="margin-top:10px;">
-          Alpine Business Services is a DBA of Trucoop, Inc. We serve California and Nevada with locally informed solutions for individuals and businesses in the Sierra region.
-        </p>
-        <p class="tiny">Email: <a href="mailto:steve@alpinetahoe.com">steve@alpinetahoe.com</a></p>
-      </div>
-    </section>
-
+      <p><em>Disclosures:</em><br>
+      Alpine Business Services is a credentialed mobile platform offering notary, fingerprinting, and compliance services. We do not provide legal advice. All services are performed in accordance with California law and applicable licensing requirements. Credentials, certifications, and insurance documentation available upon request.</p>
+    </div>
   </main>
 
   <footer>
-    <div class="wrap">
-      <p>&copy; 2025 Alpine Business Services — A DBA of Trucoop, Inc.</p>
-      <p class="tiny">Where business meets the backcountry.</p>
-
-      <p class="tiny" style="margin-top:10px;">
-        Alpine Business Services (DBA of Trucoop, Inc.) is licensed to conduct insurance business in California and Nevada.
-        California License #0E63692. Nevada Non‑Resident License #197689. Notary services are commissioned in California
-        under Commission #2409133. This website is intended for informational purposes only and does not constitute a binding
-        offer of coverage or legal advice. For questions about your rights or coverage, contact the California Department of
-        Insurance at <a href="https://www.insurance.ca.gov" target="_blank" rel="noopener">insurance.ca.gov</a> or the
-        Nevada Division of Insurance at <a href="https://doi.nv.gov" target="_blank" rel="noopener">doi.nv.gov</a>.
-      </p>
-
-      <p class="tiny" style="margin-top:10px;">
-        <strong>Privacy Notice:</strong> Alpine Business Services collects limited personal information through this website,
-        such as email addresses submitted via contact links. We do not sell or share personal data. Information submitted is
-        used solely to respond to inquiries or provide requested services. California residents may request access to or
-        deletion of their personal data under the California Consumer Privacy Act (CCPA). Nevada residents may request that
-        their information not be sold under SB538. To submit a privacy-related request, contact
-        <a href="mailto:steve@alpinetahoe.com">steve@alpinetahoe.com</a>.
-      </p>
-    </div>
+    &copy; 2025 Alpine Business Services • Truckee, CA<br>
+    Licensed • Bonded • Insured • Credentialed
   </footer>
 
-  <!-- Credly script (only once, for all badges on the page) -->
-  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </body>
 </html>
-
 
