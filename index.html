@@ -24,9 +24,9 @@
       Layout & Sections
     */
     header {
-      background-color: #005A9C;
+      background-color: #005A9C; /* This background color will now be hidden by the full-width banner */
       color: white;
-      padding: 20px;
+      padding: 0; /* Remove padding as the banner handles it */
       text-align: center;
     }
     main {
@@ -45,9 +45,11 @@
     /*
       Component-specific Styles
     */
-    .logo {
-      max-width: 120px;
-      margin-bottom: 10px;
+    .logo-banner { /* New class for the banner image */
+      width: 100%; /* Make the banner span the full width of the header */
+      max-width: 100%; /* Ensure it doesn't overflow */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove extra space below image */
     }
     h2 {
       color: #005A9C;
@@ -81,9 +83,7 @@
 <body>
 
   <header>
-    <img src="alpine-logo.png" alt="Alpine Logo" class="logo">
-    <h1>Alpine Business Services</h1>
-    <p>Mobile Notary • Loan Signing • Compliance Solutions</p>
+    <img src="alpine-logo-banner.png" alt="Alpine Business Services Logo" class="logo-banner">
   </header>
 
   <main>
@@ -107,7 +107,7 @@
         Commissioned California Notary Public<br>
         Notary Commission # 24091333 (Expires 6/26/2026)<br>
         CA Resident Insurance License # 0E63692<br>
-        NEADA Non-Resident Insurance License # 197689
+        Nevada Non-Resident Insurance License # 197689
       </p>
     </div>
   </main>
