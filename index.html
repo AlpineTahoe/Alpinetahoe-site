@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alpine Business Services</title>
+  <title>Alpine Business Services | Coming Soon</title>
   <style>
+    /*
+      Global Styles
+    */
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -12,23 +15,43 @@
       background-color: #f9f9f9;
       color: #333;
     }
+    a {
+      color: #005A9C;
+      text-decoration: none;
+    }
+
+    /*
+      Layout & Sections
+    */
     header {
       background-color: #005A9C;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    .logo {
-      max-width: 120px;
-      margin-bottom: 10px;
-    }
     main {
       padding: 30px;
       max-width: 800px;
       margin: auto;
     }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
+      color: #666;
+    }
+
+    /*
+      Component-specific Styles
+    */
+    .logo {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
     h2 {
       color: #005A9C;
+      margin-top: 0;
     }
     .badge-block {
       text-align: center;
@@ -43,24 +66,15 @@
       margin-top: 10px;
       font-size: 0.95em;
     }
-    .signature-block {
-      margin-top: 50px;
-      font-size: 0.9em;
-      line-height: 1.6;
-      color: #444;
-      border-top: 1px solid #ccc;
+    .contact-info {
+      margin-top: 20px;
       padding-top: 20px;
+      border-top: 1px solid #ccc;
     }
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.85em;
-      color: #666;
-    }
-    a {
-      color: #005A9C;
-      text-decoration: none;
+    .legal-text {
+      font-size: 0.8em;
+      line-height: 1.5;
+      margin-top: 15px;
     }
   </style>
 </head>
@@ -73,33 +87,40 @@
   </header>
 
   <main>
-    <h2>Welcome</h2>
-    <p>Alpine Business Services provides credentialed mobile support across Truckee, Reno, Tahoe City, and South Lake Tahoe. We specialize in notary services, loan signings, fingerprinting, and compliance-driven workflows tailored to legal, insurance, and business needs.</p>
+    <h2>Welcome to Alpine Business Services</h2>
+    <p>We are a credentialed mobile platform providing professional notary, loan signing, fingerprinting, and compliance solutions. Based in Truckee, CA, we serve the entire Sierra Region, including Reno, Tahoe City, and South Lake Tahoe.</p>
 
     <div class="badge-block">
-      <img src="https://www.nsa.gov/Portals/70/Images/Press-Room/Digital-Media-Center/NSA-Logo.png" alt="Certified Notary Signing Agent Badge">
+      <img src="https://www.signingagent.com/images/nsa-certified-badge.png" alt="Certified Notary Signing Agent Badge">
       <p><strong>Certified Notary Signing Agent</strong></p>
-      <p>Steve is certified to handle loan documents with precision, compliance, and care.</p>
+      <p>Steve [Last Name] is certified to handle loan documents with precision and compliance.</p>
       <p><a href="https://www.signingagent.com/profile/your-profile-id" target="_blank">Verify my NSA certification</a></p>
     </div>
 
-    <div class="signature-block">
-      <p><strong>Steve [Last Name]</strong><br>
-      Founder & Operator, Alpine Business Services<br>
-      Commissioned California Notary Public<br>
-      Certified Notary Signing Agent • DOJ-Certified Fingerprint Roller<br>
-      Truckee, CA • Serving the Sierra Region</p>
-
-      <p><em>Disclosures:</em><br>
-      Alpine Business Services is a credentialed mobile platform offering notary, fingerprinting, and compliance services. We do not provide legal advice. All services are performed in accordance with California law and applicable licensing requirements. Credentials, certifications, and insurance documentation available upon request.</p>
+    <div class="contact-info">
+      <h3>Contact & Credentials</h3>
+      <p>
+        <strong>Steve [Last Name]</strong><br>
+        Founder & Operator<br>
+        <a href="mailto:[Your Email]">[Your Email]</a> | <a href="tel:[Your Phone Number]">[Your Phone Number]</a><br>
+        <br>
+        Commissioned California Notary Public<br>
+        Notary Commission # [Your License Number]<br>
+        DOJ-Certified Fingerprint Roller # [Your DOJ Number]
+      </p>
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Alpine Business Services • Truckee, CA<br>
-    Licensed • Bonded • Insured • Credentialed
+    <p>
+      &copy; 2025 Alpine Business Services • Truckee, CA<br>
+      Licensed • Bonded • Insured • Credentialed
+    </p>
+    <div class="legal-text">
+      <strong>Disclosures:</strong> Alpine Business Services is a credentialed mobile platform offering notary, fingerprinting, and compliance services. We do not provide legal advice. All services are performed in accordance with California law and applicable licensing requirements. Credentials, certifications, and insurance documentation are available upon request. <br>
+      <a href="https://www.example.com/privacy-policy" target="_blank">Privacy Policy</a> | <a href="https://www.example.com/terms-of-service" target="_blank">Terms of Service</a>
+    </div>
   </footer>
 
 </body>
 </html>
-
