@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,14 +20,19 @@
 <body class="bg-gradient-to-br-custom text-gray-800">
 
   <!-- Hero Section -->
-  <div class="bg-white relative min-h-[400px] md:min-h-[500px] flex items-center justify-center text-center rounded-b-3xl overflow-hidden shadow-2xl">
+  <div class="relative min-h-[400px] md:min-h-[500px] flex items-center justify-center text-white text-center rounded-b-3xl overflow-hidden shadow-2xl">
+    <!-- Background Image -->
+    <!-- NOTE: The 'src' attribute must be the correct file path. Ensure donner1.jpg is in the same folder as this HTML file. -->
+    <img src="donner1.jpg" alt="A scenic view of Lake Tahoe and mountains" class="absolute inset-0 w-full h-full object-cover">
+    
+    <!-- Dark Overlay to make text and logo readable -->
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    
     <!-- Content Container -->
-    <div class="relative z-10 p-6 md:p-12 text-gray-800">
-      <!-- Logo Container with Background -->
-      <div class="p-4 rounded-lg shadow-lg max-w-sm mx-auto mb-6">
-        <!-- NOTE: The 'src' attribute must be the correct file path. Ensure alpine-logo.png is in the same folder as this HTML file. -->
-        <img src="alpine-logo.png" alt="Alpine Business Services Logo" class="w-full">
-      </div>
+    <div class="relative z-10 p-6 md:p-12">
+      <!-- NOTE: The 'src' attribute must be the correct file path. Ensure alpine-logo.png is in the same folder as this HTML file. -->
+      <img src="alpine-logo.png" alt="Alpine Business Services Logo" class="w-full max-w-sm mx-auto mb-6">
+      
       <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 drop-shadow-md">
         Coming Soon
       </h1>
@@ -66,6 +71,16 @@
             </p>
           </div>
         </div>
+        <!-- Badges Section -->
+        <div class="mt-8 flex justify-center items-center space-x-4">
+          <!-- MLIS Badge -->
+          <!-- Replace the src with the URL of your MLIS badge image -->
+          <img src="management-liability-insurance-specialist.png" alt="MLIS Badge" class="h-16 w-auto rounded-md">
+          
+          <!-- NNA Notary Signing Agent Badge -->
+          <!-- Replace the src with the URL of your NNA Notary Signing Agent badge image -->
+          <img src="nsa_member_badge (1).png" alt="NNA Notary Signing Agent Badge" class="h-16 w-auto rounded-md">
+        </div>
       </div>
     </section>
   </main>
@@ -83,4 +98,4 @@
     </div>
   </footer>
 </body>
-</html>
+</html><
