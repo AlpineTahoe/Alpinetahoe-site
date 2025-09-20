@@ -31,6 +31,16 @@
     .services {
       margin: 30px 0;
       font-size: 1.2em;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      margin: 8px 0;
     }
     .contact {
       margin: 30px 0;
@@ -44,6 +54,20 @@
     footer {
       margin-top: 20px;
       font-size: 1em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .signature {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .signature img {
+      max-width: 120px;
     }
   </style>
 </head>
@@ -52,22 +76,23 @@
     <h1>Alpine Notary</h1>
     <p>Trusted Mobile Notary Services in Truckee & Tahoe</p>
 
-    <div class="badge">
-      <img src="nsa_member_badge.png" alt="NSA Member Badge" width="150">
-    </div>
-
     <div class="services">
-      <h2>Services Offered</h2>
-      <ul style="list-style: none; padding: 0;">
-        <li>Mobile Notary Public</li>
-        <li>Loan Signing Services</li>
-        <li>Real Estate & Escrow Support</li>
-        <li>Coming Soon: Remote Online Notarization</li>
+      <h2>Notary Services</h2>
+      <ul>
+        <li>Mobile Notary Public – We come to you</li>
+        <li>Loan Signings & Real Estate Transactions</li>
+        <li>Escrow & Title Document Notarization</li>
+        <li>Acknowledgments & Jurats</li>
+        <li>Oaths & Affirmations</li>
+        <li>Power of Attorney & Estate Planning Documents</li>
+        <li>Trusts, Wills, and Advanced Health Care Directives</li>
+        <li>Business & Corporate Documents</li>
       </ul>
     </div>
 
     <div class="contact">
-      <p>📧 Contact: <a href="mailto:steve@alpinetahoe.com" style="color:#fff;">steve@alpinetahoe.com</a></p>
+      <p>📧 Email: <a href="mailto:steve@alpinetahoe.com" style="color:#fff;">steve@alpinetahoe.com</a></p>
+      <p>📞 Phone: <a href="tel:+15306062539" style="color:#fff;">(530) 606-2539</a></p>
     </div>
 
     <div class="disclaimer">
@@ -75,12 +100,14 @@
     </div>
 
     <footer>
-      <p>Steven Cooper, MLIS<br>
-      California Notary Commission #0E63692</p>
+      <div class="signature">
+        <div>
+          <p>Steven Cooper, MLIS<br>
+          California Notary Commission #0E63692</p>
+        </div>
+        <img src="nsa_member_badge.png" alt="NSA Member Badge">
+      </div>
     </footer>
   </div>
 </body>
 </html>
-
-
-
