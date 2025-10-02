@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alpine Notary - Mobile Notary Services in Truckee & Lake Tahoe</title>
+  <title>Alpine Notary - Mobile Notary Services</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <style>
@@ -17,72 +17,55 @@
     }
     .overlay {
       background: rgba(0, 0, 0, 0.65);
-      padding: 40px 20px;
+      padding: 50px 20px;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    h1 {
+    h1, h2 {
       font-family: 'Poppins', sans-serif;
-      font-size: 3em;
-      margin-bottom: 10px;
-      color: #ffd700;
-    }
-    h2 {
-      font-family: 'Poppins', sans-serif;
-      margin: 25px 0 15px;
-      color: #ffd700;
-    }
-    p {
-      font-size: 1.2em;
       margin-bottom: 15px;
     }
-    .content {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .section {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 0 auto 40px auto;
       text-align: left;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 25px 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      font-size: 1.1em;
+      line-height: 1.6;
     }
-    .content ul {
-      padding-left: 20px;
-      margin: 10px 0 20px;
+    .section ul {
+      list-style: none;
+      padding: 0;
     }
-    .content li {
+    .section li {
       margin: 8px 0;
     }
     .contact {
-      margin: 40px 0;
+      margin: 30px 0;
+      font-size: 1.2em;
       text-align: center;
     }
     .contact a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      border-radius: 8px;
-      background: #ffd700;
-      color: #000;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .contact a:hover {
-      background: #e6c200;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: underline;
     }
     .disclaimer {
       font-size: 0.9em;
       margin-top: 40px;
       color: #ccc;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
     }
     footer {
-      margin-top: 30px;
+      margin-top: 20px;
       font-size: 1em;
       display: flex;
       flex-direction: column;
@@ -92,37 +75,32 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 20px;
+      gap: 15px;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 20px;
+      text-align: center;
     }
     .signature img {
       max-width: 120px;
     }
     /* Floating Call Now Button */
-    .floating-call {
+    .call-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #ffd700;
-      color: #000;
-      font-weight: 700;
-      padding: 15px 25px;
+      background: #28a745;
+      color: white;
+      padding: 15px 20px;
       border-radius: 50px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      font-size: 1.2em;
+      font-weight: bold;
       text-decoration: none;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
       transition: background 0.3s ease;
-      z-index: 999;
+      z-index: 1000;
     }
-    .floating-call:hover {
-      background: #e6c200;
-    }
-    @media (max-width: 600px) {
-      .floating-call {
-        padding: 12px 20px;
-        font-size: 1em;
-      }
+    .call-button:hover {
+      background: #218838;
     }
   </style>
 </head>
@@ -131,7 +109,7 @@
     <h1>🏔️ Alpine Notary</h1>
     <p>Mobile Notary Services in Truckee, Lake Tahoe & Beyond (CA Only)</p>
 
-    <div class="content">
+    <div class="section">
       <h2>✍️ Standard Notarization Fees (CA Law – Fixed)</h2>
       <p>California sets maximum fees for notarial acts. These are state-mandated and cannot be discounted:</p>
       <ul>
@@ -139,10 +117,20 @@
         <li>Oath or Affirmation – $15 each</li>
         <li>Certified Copy of Power of Attorney – $15 per copy</li>
       </ul>
+    </div>
 
+    <div class="section">
       <h2>🚗 Mobile Travel Fees</h2>
       <p>Transparent, zone-based pricing across Truckee, Lake Tahoe, and surrounding Sierra communities. Travel fees are always disclosed and agreed upon in advance.</p>
+      <ul>
+        <li>Truckee (Downtown & Nearby Neighborhoods) – $20</li>
+        <li>Northstar, Tahoe Donner, Glenshire – $30</li>
+        <li>Incline Village, Kings Beach, Tahoe City – $40</li>
+        <li>South Lake Tahoe, Sierraville, Remote Sierra Areas – $50+</li>
+      </ul>
+    </div>
 
+    <div class="section">
       <h2>📦 Loan Signing Services</h2>
       <p>Loan signing fees vary based on location, document size, scanback requirements, and scheduling (rush, after-hours, or weekend). A final quote is always provided and agreed upon before service.</p>
       <ul>
@@ -151,7 +139,9 @@
         <li>Extended Travel Areas (Sierraville, South Lake Tahoe, remote Sierra) – add $20–$50 depending on distance</li>
         <li>Rush / After-Hours Loan Signing – add $25–$50</li>
       </ul>
+    </div>
 
+    <div class="section">
       <h2>🤝 Loyalty Rewards & Community Discounts</h2>
       <ul>
         <li>Truckee Local Discount – $10 off travel fee</li>
@@ -160,20 +150,29 @@
         <li>Referral Credit – $10 off your next travel fee when you refer a new client</li>
         <li>Veteran Discount – $10 off travel fee as a thank-you for service</li>
       </ul>
-      <p><strong>Preferred Partner Program (Contractors & Escrow Offices):</strong> Flat, predictable travel fee for repeat business clients across Truckee and the Lake Tahoe region. Designed for offices and professionals who schedule multiple signings each month, ensuring consistency, priority scheduling, and cost savings.</p>
+      <p><strong>Preferred Partner Program (Contractors & Escrow Offices):</strong><br>
+      Flat, predictable travel fee for repeat business clients across Truckee and the Lake Tahoe region. Designed for offices and professionals who schedule multiple signings each month, ensuring consistency, priority scheduling, and cost savings.</p>
+    </div>
 
+    <div class="section">
       <h2>🌟 Why Choose Alpine Notary?</h2>
       <ul>
         <li>Based in Truckee, serving Lake Tahoe and beyond in California</li>
         <li>Flexible scheduling, including evenings and weekends</li>
         <li>Transparent pricing with loyalty rewards</li>
         <li>Professional, reliable, and community-focused</li>
+        <li><strong>Bonded & Insured:</strong> Fully bonded and insured in the State of California for your protection and peace of mind</li>
       </ul>
     </div>
 
+    <div class="section" style="text-align:center;">
+      <h2>👉 Book Your Appointment Today</h2>
+      <p>Fast, reliable mobile notary service in Truckee, Lake Tahoe, and beyond in California.</p>
+    </div>
+
     <div class="contact">
-      <a href="tel:+15306062539">📞 Call Now</a>
-      <a href="mailto:steve@alpinetahoe.com">📧 Email Me</a>
+      <p>📧 Email: <a href="mailto:steve@alpinetahoe.com">steve@alpinetahoe.com</a></p>
+      <p>📞 Phone: <a href="tel:+15306062539">(530) 606-2539</a></p>
     </div>
 
     <div class="disclaimer">
@@ -184,7 +183,8 @@
       <div class="signature">
         <div>
           <p>Steven Cooper, MLIS<br>
-          California Notary Commission #0E63692</p>
+          California Notary Commission #0E63692<br>
+          Bonded & Insured – State of California</p>
         </div>
         <img src="nsa_member_badge.png" alt="NSA Member Badge">
       </div>
@@ -192,6 +192,6 @@
   </div>
 
   <!-- Floating Call Now Button -->
-  <a href="tel:+15306062539" class="floating-call">📞 Call Now</a>
+  <a href="tel:+15306062539" class="call-button">📞 Call Now</a>
 </body>
 </html>
